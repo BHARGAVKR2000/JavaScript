@@ -9,3 +9,8 @@ function pow(x, n){
 
 const result = pow(2,4); // find result of(2 ** 4)
 alert(result);
+
+let calculatePow = pow; 
+
+alert("calculated power: "+calculatePow(5,2));
+
