@@ -30,3 +30,16 @@ function outerFunction(outer){
 
 const newFunction = outerFunction('outside');
 newFunction('inside');
+
+/**************************************Example 4*********************************************************** */
+
+const f = () => {
+    let counter = 0;
+    return  () => {
+        counter += 1;
+        return counter;
+    };
+}
+
+f();
+console.log("counter value: "+f());
