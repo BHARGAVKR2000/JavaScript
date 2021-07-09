@@ -31,4 +31,18 @@ function showCancel(){
 }
 
 ask("are you human?",showOk,showCancel);
+/*******************************************Call Back Function*********************************************************** */
+
+setTimeout(function (){
+    console.log("timer");
+}, 5000);
+
+function x(y){
+    console.log("x");
+    y();       // y is a call back fuction
+}
+
+x(function y(){
+    console.log("y");
+})
 /****************************************************************************************************** */
